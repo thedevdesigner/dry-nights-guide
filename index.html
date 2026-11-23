@@ -85,9 +85,22 @@ summary{cursor:pointer;font-family:"Helvetica Neue",Arial,sans-serif;font-weight
 details p{margin:12px 0 0}
 footer{padding:26px 0 40px;font-size:.85rem;color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif}
 footer p{margin:0 0 14px;font-size:.85rem}
+.promise-bar{background:var(--red);color:#fff;text-align:center;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:.95rem;line-height:1.35;padding:12px 16px;padding-top:calc(12px + env(safe-area-inset-top,0px))}
+.promise-bar span{display:block;max-width:560px;margin:0 auto}
+.bonus-head{text-align:center;margin:34px 0 18px}
+.bonus-head .free{display:inline-block;background:var(--red);color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:99px;margin-bottom:10px}
+.bonus-head h3{font-size:1.4rem;margin:0}
+.bonus{border:3px solid #111;border-radius:16px;overflow:hidden;margin:0 0 22px;background:#fff}
+.bonus .pic{display:flex;align-items:center;justify-content:center;min-height:200px;background:var(--box);border-bottom:3px solid #111;color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.9rem;text-align:center;padding:12px}
+.bonus .pic img{width:100%;height:auto;display:block}
+.bonus .txt{padding:18px 20px 6px;position:relative}
+.bonus .free-tag{position:absolute;top:-16px;left:20px;background:var(--red);color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:99px}
+.bonus h3{font-size:1.25rem;margin:8px 0 10px}
+.bonus p{font-size:.98rem;line-height:1.55;margin:0 0 16px}
 @media (max-width:480px){body{font-size:19px}h1{font-size:1.7rem}h2{font-size:1.4rem}}
 </style>
 </head>
+<div class="promise-bar" role="note"><span>Try it gently, Mummy. If it doesn't help in 14 days, send us a message and we'll refund you.</span></div>
 <section>
   <div class="wrap">
     <h1>Mummy, if your child still wets the bed, you are not a bad mother, and you are not alone.</h1>
@@ -185,13 +198,25 @@ footer p{margin:0 0 14px;font-size:.85rem}
     <p>A step-by-step guide for parents on managing bedwetting in children aged 7 to 14.</p>
     <p>Think of it as a road map for a road you have never travelled. It tells you where to turn, and where to stop and ask a doctor.</p>
     <p>It explains the causes in plain language, gives you a 14-day plan to try, and tells you exactly when to see a doctor.</p>
-    <div class="box"><span class="e">🧠</span><div><h3>Part 1: What is happening at night</h3><p>The causes, explained simply.</p></div></div>
-    <div class="box"><span class="e">🌙</span><div><h3>Part 2: The 14-day evening plan</h3><p>Seven steps on drinks, supper, toilet habits and rewards.</p></div></div>
-    <div class="box"><span class="e">🛏️</span><div><h3>Part 3: When it happens at night</h3><p>How to change him calmly, so he goes back to sleep.</p></div></div>
-    <div class="box"><span class="e">💬</span><div><h3>Part 4: What to say to your child</h3><p>Words to use, words to avoid, for each age.</p></div></div>
-    <div class="box"><span class="e">👪</span><div><h3>Part 5: Relatives and house help</h3><p>Short answers and a message you can copy.</p></div></div>
-    <div class="box"><span class="e">🩺</span><div><h3>Part 6: Signs, and what to do</h3><p>“If you notice this, do this”, including when to see a doctor.</p></div></div>
-    <p style="margin-top:22px"><strong>Free bonuses:</strong> 🎒 sleepovers and school trips, 🤝 talking to your husband, and 🎧 the audio version.</p>
+    <div class="box"><span class="e">🧠</span><div><h3>Part 1: What is happening at night</h3><p>The guilt lifts. You finally see that this is not disobedience, not laziness and not your fault, and you can look at him again without frustration.</p></div></div>
+    <div class="box"><span class="e">🌙</span><div><h3>Part 2: The 14-day evening plan</h3><p>No more guessing at 9pm. In two weeks you know what is helping, what is not, and what to try next, so you stop going to bed wondering if you are doing it right.</p></div></div>
+    <div class="box"><span class="e">🛏️</span><div><h3>Part 3: When it happens at night</h3><p>The 2am scene changes. No shouting, no tears, no lying awake afterwards. Just a quiet change of clothes, and both of you back to sleep.</p></div></div>
+    <div class="box"><span class="e">💬</span><div><h3>Part 4: What to say to your child</h3><p>He stops hiding wet clothes and starts coming to you. Your words become the reason he feels safe, not ashamed.</p></div></div>
+    <div class="box"><span class="e">👪</span><div><h3>Part 5: Relatives and house help</h3><p>The gossip dies at the door. You have the exact sentence ready, so nobody can embarrass him or make you explain yourself again.</p></div></div>
+    <div class="box"><span class="e">🩺</span><div><h3>Part 6: Signs, and what to do</h3><p>Peace of mind. You will know when home steps are enough and when it is time to see a doctor, so you stop lying awake wondering if you are missing something.</p></div></div>
+        <div class="bonus-head"><span class="free">Plus 3 free bonuses</span><h3>Made for the moments that worry you most</h3></div>
+    <div class="bonus">
+      <div class="pic"><img src="./images/bonus-sleepover.png" alt="A mother packing her child’s school trip bag" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="ph" style="font-size:3.5rem;display:none">🎒</span></div>
+      <div class="txt"><span class="free-tag">Free bonus</span><h3>Sleepovers and school trips</h3><p>You want him to go, but your mind is already on the night. This bonus shows you what to prepare, what to pack, and what to quietly tell the teacher or host, so you leave the house in control. He goes, he enjoys it, and nobody finds out.</p></div>
+    </div>
+    <div class="bonus">
+      <div class="pic"><img src="./images/bonus-husband.png" alt="A mother and father talking calmly at home" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="ph" style="font-size:3.5rem;display:none">🤝</span></div>
+      <div class="txt"><span class="free-tag">Free bonus</span><h3>Talking to your husband</h3><p>You should not have to carry this alone, and you should not have to start an argument to be heard. This bonus gives you the exact words to bring it up, what not to say, and a short message you can send, so he understands and supports you instead of saying “he is just lazy.”</p></div>
+    </div>
+    <div class="bonus">
+      <div class="pic"><img src="./images/bonus-audio.png" alt="A relaxed mother listening with earphones" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="ph" style="font-size:3.5rem;display:none">🎧</span></div>
+      <div class="txt"><span class="free-tag">Free bonus</span><h3>The audio version</h3><p>Too tired to read? Open the page and tap play. You can listen online right away, or download it and keep it. Press play while you cook, travel or lie down at night, and still get the whole guide.</p></div>
+    </div>
     <p class="note" style="text-align:left">This guide is not medical treatment and is not written by doctors. It is based on Nigerian studies and doctors’ guidance, and the sources are listed inside.</p>
     <div class="pricebox" id="get">
       <div class="price">₦4,500</div>
