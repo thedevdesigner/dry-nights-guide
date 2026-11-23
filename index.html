@@ -6,23 +6,7 @@
 <meta name="color-scheme" content="light">
 <title>The Dry Nights Guide</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1462651225999873');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1462651225999873&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -49,8 +33,8 @@ src="https://www.facebook.com/tr?id=1462651225999873&ev=PageView&noscript=1"
 }
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);background:#fff;scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;min-height:100%;background:#fff;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.6}
-.wrap{max-width:560px;margin:0 auto;padding:0 22px}
+body{margin:0;min-height:100%;background:#fff;color:var(--ink);font-family:"Poppins",Arial,sans-serif;font-size:19px;line-height:1.65}
+h1,h2,h3{font-family:"Poppins",Arial,sans-serif;line-height:1.25;font-weight:800}.wrap{max-width:560px;margin:0 auto;padding:0 22px}
 section{padding:34px 0}
 h1,h2,h3{font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.2;font-weight:800}
 h1{font-size:2rem;text-align:center;margin:20px 0 16px}
@@ -103,10 +87,38 @@ footer p{margin:0 0 14px;font-size:.85rem}
 .cost .row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.95rem;line-height:1.4}
 .cost .row small{display:block;color:var(--muted);font-size:.82rem;margin-top:2px}
 .cost .row b{white-space:nowrap}
-.cost .total{display:flex;justify-content:space-between;gap:12px;border-top:3px solid #111;padding-top:12px;margin-top:4px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:1.05rem}
+.cost .total{display:flex;justify-content:space-between;gap:12px;border-top:3px solid #111;padding-top:12px;margin-top:4px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:500;font-size:1.05rem}
 .cost .total b{color:var(--red);white-space:nowrap}
 .cost .close{margin:16px 0 0;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:1.05rem;text-align:center;line-height:1.35}
 @media (max-width:480px){body{font-size:19px}h1{font-size:1.7rem}h2{font-size:1.4rem}}
+/* Pricebox visual hierarchy */
+.pricebox .pb-lead{font-weight:700;color:var(--ink)}
+.pricebox .pb-sub{font-weight:400;color:var(--muted);font-size:.92rem}
+.pricebox .pb-sub .pb-amt{font-weight:400}
+
+/* Bold free-chapter escape-hatch link & modal */
+.dn-free-trigger-wrap{text-align:center;margin:16px 0 0;font-family:"Poppins",Arial,sans-serif;font-size:.95rem;line-height:1.45}
+.dn-free-trigger{background:none;border:0;padding:4px 2px;font:inherit;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.dn-free-trigger:hover{color:var(--red)}
+.dn-free-trigger:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.dn-modal-backdrop{display:none;position:fixed;inset:0;z-index:9999;background:rgba(17,17,17,.65);padding:18px;overflow-y:auto;align-items:center;justify-content:center}
+.dn-modal-backdrop.is-open{display:flex}
+.dn-modal-card{position:relative;width:100%;max-width:480px;border:3px solid var(--ink);border-radius:16px;padding:24px 22px 22px;background:#fff;color:var(--ink);font-family:"Poppins",Arial,sans-serif;font-size:16px;line-height:1.55;margin:auto;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.dn-modal-close{position:absolute;top:12px;right:14px;background:var(--box);border:2px solid var(--line);border-radius:99px;width:34px;height:34px;font:800 18px/1 "Poppins",Arial,sans-serif;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.dn-modal-close:hover{border-color:var(--ink)}
+.dn-modal-tag{display:inline-block;background:#c0392b;color:#fff;font:700 .72rem "Poppins",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:10px}
+.dn-modal-card h2{font-family:"Poppins",Arial,sans-serif;font-weight:700;font-size:1.3rem;line-height:1.3;margin:0 0 8px;padding-right:28px}
+.dn-modal-card p{margin:0 0 14px;font-size:15px;line-height:1.55;color:var(--muted)}
+.dn-modal-card label{display:block;font:600 .88rem "Poppins",Arial,sans-serif;color:var(--ink);margin:0 0 6px}
+.dn-modal-card input[type=text],.dn-modal-card input[type=tel]{width:100%;font:.95rem "Poppins",Arial,sans-serif;padding:12px 14px;border:2px solid var(--ink);border-radius:10px;margin-bottom:14px;background:#fff;color:var(--ink)}
+.dn-modal-card input:focus{outline:3px solid #f0b3ab;outline-offset:1px}
+.dn-modal-hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.dn-modal-btn{display:block;width:100%;text-align:center;text-decoration:none;background:#c0392b;color:#fff;border:0;border-radius:12px;padding:15px 18px;font:700 1rem "Poppins",Arial,sans-serif;cursor:pointer}
+.dn-modal-btn:hover{background:var(--red-dark)}
+.dn-modal-btn[disabled]{opacity:.65;cursor:wait}
+.dn-modal-card p.dn-modal-fine{font:12.5px/1.45 "Poppins",Arial,sans-serif;color:#6b6b6b;margin:12px 0 0}
+.dn-modal-err{display:none;font:600 .88rem "Poppins",Arial,sans-serif;color:#c0392b;margin:-4px 0 12px}
+#dnDone{display:none}
 </style>
 </head>
 <div class="promise-bar" role="note"><span>Try it gently, Mummy. If it doesn't help in 14 days, send us a message and we'll refund you.</span></div>
@@ -239,9 +251,12 @@ footer p{margin:0 0 14px;font-size:.85rem}
     </div>
     <div class="pricebox" id="get">
       <div class="price">₦4,500</div>
-      <p class="note">One-time payment. Read it privately on your phone.</p>
-      <a class="btn buy" href="#">Get The Dry Nights Guide<small>Backed by our 14-day money-back guarantee</small></a>
+      <a class="btn buy" href="#">Get The Dry Nights Guide<small>Includes the 22-page guide + free audiobook</small></a>
+      <p class="note">Instant download · Read on your phone</p>
     </div>
+    <p class="dn-free-trigger-wrap">
+      Not ready to buy yet? <button type="button" class="dn-free-trigger" id="dnOpenModal">Read a free chapter first</button>
+    </p>
   </div>
 </section>
 <hr>
@@ -267,6 +282,9 @@ footer p{margin:0 0 14px;font-size:.85rem}
     <p class="note" style="margin-top:18px">Requests after 14 days cannot be accepted, so the rules stay clear for everyone.</p>
     <a class="btn buy" href="#">Get The Guide: ₦4,500<small>Try it for 14 days, risk free</small></a>
   </div>
+    <p class="dn-free-trigger-wrap">
+  Not ready to buy yet? <button type="button" class="dn-free-trigger">Read a free chapter first</button>
+</p>
 </section>
 <hr>
 
@@ -306,11 +324,159 @@ footer p{margin:0 0 14px;font-size:.85rem}
     <p>© The Dry Nights Guide</p>
   </div>
 </footer>
+<!-- Free Chapter Pop-Up Modal -->
+<div class="dn-modal-backdrop" id="dnModal" role="dialog" aria-modal="true" aria-labelledby="dnModalTitle" aria-hidden="true">
+  <div class="dn-modal-card">
+    <button type="button" class="dn-modal-close" id="dnCloseModal" aria-label="Close">&times;</button>
 
+    <div id="dnAsk">
+      <span class="dn-modal-tag">Free Chapter</span>
+      <h2 id="dnModalTitle">Not ready yet, Mummy? Read a free chapter first, on us.</h2>
+      <p>Quick check to confirm you’re a real parent and not a bot—enter your first name and WhatsApp number below.</p>
+
+      <form id="dnLeadForm" novalidate>
+        <label for="dnFirstName">Your first name</label>
+        <input id="dnFirstName" name="first_name" type="text" autocomplete="given-name" required placeholder="e.g. Amaka">
+
+        <label for="dnWhatsapp">Your WhatsApp number</label>
+        <input id="dnWhatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required placeholder="e.g. 0803 123 4567">
+
+        <div class="dn-modal-hp" aria-hidden="true">
+          <label for="dnCompany">Leave blank</label>
+          <input id="dnCompany" name="company" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <p class="dn-modal-err" id="dnErr" role="alert"></p>
+        <button class="dn-modal-btn" id="dnSubmitBtn" type="submit">Send me the free chapter</button>
+      </form>
+
+      <p class="dn-modal-fine">You’ll get it immediately—right after you submit, you’ll be forwarded straight to the free chapter link. No spam, and we never share your number</p>
+    </div>
+
+    <div id="dnDone">
+      <span class="dn-modal-tag">Sent</span>
+      <h2>Thank you, <span id="dnGreet">Mummy</span>. Here is your free chapter.</h2>
+      <p>Your chapter is ready now. If you aren’t forwarded automatically, tap below:</p>
+      <a class="dn-modal-btn" id="dnChapterLink" href="https://selar.com/111ef439l4" target="_blank" rel="noopener">Open my free chapter</a>
+      <p class="dn-modal-fine">Save it to your phone so you can read quietly whenever the house settles.</p>
+    </div>
+  </div>
+</div>
 <script>
   // Paste your Paystack payment link here. Every red button uses it.
   var PAY_LINK = "https://selar.com/y0453k0u65";
   try { document.querySelectorAll("a.buy").forEach(function(a){ a.href = PAY_LINK; }); } catch (e) {}
+const SCRIPT_URL  = "https://script.google.com/macros/s/AKfycbyPlNLj9QVlFS4fVIYRKeeAYzug1_XmxZqlyUkMMaA2sP1wHSmbzBVqns6eFg77TQk/exec";
+const CHAPTER_URL = "https://selar.com/111ef439l4";
+
+const modal     = document.getElementById("dnModal");
+const closeBtn  = document.getElementById("dnCloseModal");
+const form      = document.getElementById("dnLeadForm");
+const errBox    = document.getElementById("dnErr");
+const submitBtn = document.getElementById("dnSubmitBtn");
+const askBox    = document.getElementById("dnAsk");
+const doneBox   = document.getElementById("dnDone");
+const greet     = document.getElementById("dnGreet");
+const link      = document.getElementById("dnChapterLink");
+const triggers  = document.querySelectorAll(".dn-free-trigger");
+
+link.href = CHAPTER_URL;
+
+function openModal() {
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  const firstInput = document.getElementById("dnFirstName");
+  if (firstInput && askBox.style.display !== "none") {
+    firstInput.focus();
+  }
+}
+
+function closeModal() {
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+for (let i = 0; i < triggers.length; i++) {
+  triggers[i].addEventListener("click", function () {
+    openModal();
+  });
+}
+
+closeBtn.addEventListener("click", closeModal);
+
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && modal.classList.contains("is-open")) {
+    closeModal();
+  }
+});
+
+window.addEventListener("pageshow", function () {
+  submitBtn.disabled = false;
+  submitBtn.textContent = "Unlock the free chapter now";
+});
+
+function showError(msg) {
+  errBox.textContent = msg;
+  errBox.style.display = "block";
+}
+
+function cleanPhone(raw) {
+  let digits = raw.replace(/\D/g, "");
+  if (digits.length === 11 && digits.charAt(0) === "0") {
+    digits = "234" + digits.slice(1);
+  }
+  return digits;
+}
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  errBox.style.display = "none";
+
+  if (document.getElementById("dnCompany").value.trim() !== "") {
+    window.location.href = CHAPTER_URL;
+    return;
+  }
+
+  const name  = document.getElementById("dnFirstName").value.trim();
+  const phone = cleanPhone(document.getElementById("dnWhatsapp").value);
+
+  if (name.length < 2) {
+    showError("Please enter your first name.");
+    return;
+  }
+
+  if (phone.length < 10 || phone.length > 15) {
+    showError("Please enter a valid WhatsApp number, e.g. 0803 123 4567.");
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Opening chapter...";
+
+ const body = new URLSearchParams({
+    name: name,
+    phone: phone,
+    source: location.href,
+    website: ""
+  });
+
+  fetch(SCRIPT_URL, { method: "POST", mode: "cors", body: body, keepalive: true })
+    .catch(function () {})
+    .finally(function () {
+      greet.textContent = name;
+      askBox.style.display = "none";
+      doneBox.style.display = "block";
+      window.location.href = CHAPTER_URL;
+    });
+});
 </script>
 </body>
 </html>
