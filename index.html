@@ -97,6 +97,15 @@ footer p{margin:0 0 14px;font-size:.85rem}
 .bonus .free-tag{position:absolute;top:-16px;left:20px;background:var(--red);color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:99px}
 .bonus h3{font-size:1.25rem;margin:8px 0 10px}
 .bonus p{font-size:.98rem;line-height:1.55;margin:0 0 16px}
+.cost{border:3px solid #111;border-radius:16px;padding:20px;margin:24px 0 0;background:#fff}
+.cost h3{font-size:1.2rem;margin:0 0 6px}
+.cost .sub{font-size:.95rem;color:var(--muted);margin:0 0 14px}
+.cost .row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.95rem;line-height:1.4}
+.cost .row small{display:block;color:var(--muted);font-size:.82rem;margin-top:2px}
+.cost .row b{white-space:nowrap}
+.cost .total{display:flex;justify-content:space-between;gap:12px;border-top:3px solid #111;padding-top:12px;margin-top:4px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:1.05rem}
+.cost .total b{color:var(--red);white-space:nowrap}
+.cost .close{margin:16px 0 0;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:1.05rem;text-align:center;line-height:1.35}
 @media (max-width:480px){body{font-size:19px}h1{font-size:1.7rem}h2{font-size:1.4rem}}
 </style>
 </head>
@@ -207,17 +216,27 @@ footer p{margin:0 0 14px;font-size:.85rem}
         <div class="bonus-head"><span class="free">Plus 3 free bonuses</span><h3>Made for the moments that worry you most</h3></div>
     <div class="bonus">
       <div class="pic"><img src="./images/bonus-sleepover.png" alt="A mother packing her child’s school trip bag" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="ph" style="font-size:3.5rem;display:none">🎒</span></div>
-      <div class="txt"><span class="free-tag">Free bonus</span><h3>Sleepovers and school trips guide</h3><p>You want him to go, but your mind is already on the night. This bonus shows you what to prepare, what to pack, and what to quietly tell the teacher or host, so you leave the house in control. He goes, he enjoys it, and nobody finds out.</p></div>
+      <div class="txt"><span class="free-tag">Free bonus</span><h3>Sleepovers and school trips</h3><p>You want him to go, but your mind is already on the night. This bonus shows you what to prepare, what to pack, and what to quietly tell the teacher or host, so you leave the house in control. He goes, he enjoys it, and nobody finds out.</p></div>
     </div>
     <div class="bonus">
       <div class="pic"><img src="./images/bonus-husband.png" alt="A mother and father talking calmly at home" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="ph" style="font-size:3.5rem;display:none">🤝</span></div>
-      <div class="txt"><span class="free-tag">Free bonus</span><h3>Talking to your husband guide</h3><p>You should not have to carry this alone, and you should not have to start an argument to be heard. This bonus gives you the exact words to bring it up, what not to say, and a short message you can send, so he understands and supports you instead of saying “he is just lazy.”</p></div>
+      <div class="txt"><span class="free-tag">Free bonus</span><h3>Talking to your husband</h3><p>You should not have to carry this alone, and you should not have to start an argument to be heard. This bonus gives you the exact words to bring it up, what not to say, and a short message you can send, so he understands and supports you instead of saying “he is just lazy.”</p></div>
     </div>
     <div class="bonus">
       <div class="pic"><img src="./images/bonus-audio.png" alt="A relaxed mother listening with earphones" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="ph" style="font-size:3.5rem;display:none">🎧</span></div>
       <div class="txt"><span class="free-tag">Free bonus</span><h3>The audio version</h3><p>Too tired to read? Open the page and tap play. You can listen online right away, or download it and keep it. Press play while you cook, travel or lie down at night, and still get the whole guide.</p></div>
     </div>
     <p class="note" style="text-align:left">This guide is not medical treatment and is not written by doctors. It is based on Nigerian studies and doctors’ guidance, and the sources are listed inside.</p>
+    <div class="cost">
+      <h3>What these nights have already cost you</h3>
+      <p class="sub">Think about what you have spent without counting it.</p>
+      <div class="row"><span>🧺 Extra soap and washing powder<small>about ₦1,500 a week, for 3 months</small></span><b>₦18,000</b></div>
+      <div class="row"><span>🛏️ Replacement bedsheet<small>about ₦8,500 each</small></span><b>₦8,500</b></div>
+      <div class="row"><span>🧸 Replacement duvet<small>about ₦18,000</small></span><b>₦18,000</b></div>
+      <div class="row"><span>🧷 Mattress cover or protector<small>about ₦24,000</small></span><b>₦24,000</b></div>
+      <div class="total"><span>Even if you replace just one of each</span><b>₦68,500</b></div>
+      <p class="close">This guide is ₦4,500, once.</p>
+    </div>
     <div class="pricebox" id="get">
       <div class="price">₦4,500</div>
       <p class="note">One-time payment. Read it privately on your phone.</p>
@@ -254,7 +273,7 @@ footer p{margin:0 0 14px;font-size:.85rem}
 <section>
   <div class="wrap">
     <h2>Questions you may have.</h2>
-   <details><summary>How long is the ebook?</summary><p>It is 22 pages, short enough to read in one evening. The audio version is about 22 minutes.</p></details>
+     <details><summary>How long is the ebook?</summary><p>It is 22 pages, short enough to read in one evening. The audio version is about 22 minutes.</p></details>
 
 <details><summary>Is it hard to read?</summary><p>No. It is written in simple, everyday language, with short steps you can follow even when you are tired.</p></details>
 
